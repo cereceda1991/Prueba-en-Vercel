@@ -107,7 +107,7 @@ function Homesinmembresia() {
         <SideBar />
       </div>
       <header>
-        <h1>Mi progreso</h1>
+        <h1>Bienvenido Robert</h1>
         <form>
           <input />
           <button>
