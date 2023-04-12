@@ -107,11 +107,12 @@ function Homesinmembresia() {
         <SideBar />
       </div>
       <header>
-        <h1>
-          Bienvenido <br /> Robert
-        </h1>
+        <div>
+          <p>Bienvenido </p>
+          <h1>Robert</h1>
+        </div>
         <form>
-          <input />
+          <input placeholder="Buscar" />
           <button>
             <BiSearchAlt />
           </button>

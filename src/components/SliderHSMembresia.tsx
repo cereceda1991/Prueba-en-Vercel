@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styles from "@/styles/SliderHSMembresia.module.css";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 

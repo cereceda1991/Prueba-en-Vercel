@@ -31,17 +31,17 @@
 
 .container_phrases h2 {
     position: absolute;
-    width: 100%;
-    top: 20%;
-    left: 0;
-
+    width: 598px;
+    top: 54px;
+    right: 54px;
+    text-align: justify;
 }
 
 .buttons_nextprev {
     display: flex;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 54px;
+    right: 46px;
     gap: 2rem;
 }
 
@@ -59,8 +59,8 @@
 
 .button_Slider {
     position: absolute;
-    bottom: 6rem;
-    right: 0;
+    bottom: 139px;
+    right: 46px;
     width: 249.29px;
     height: 46px;
     border-radius: 10px;
