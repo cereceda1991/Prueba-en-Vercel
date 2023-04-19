@@ -7,6 +7,8 @@ import { useState } from "react";
 import SliderHSMembresia from "@/components/SliderHSMembresia";
 import CardNews from "@/components/CardNews";
 import CardResources from "@/components/CardResources";
+import ModalStartNow from "@/components/ModalStart";
+import SideBarMobile from "@/components/SideBarMobile";
 
 const plansArray = [
   {
@@ -40,16 +42,19 @@ const SliderPhrases = [
     id: 0,
     text: "Estudia inglés desde cualquier lugar del mundo con Verbify. ¡Regístrate ahora y comienza a aprender!",
     src: "https://i.ibb.co/t4Swxgk/slideimg1.png",
+    contentbutton: "Quiero mi membresía",
   },
   {
     id: 1,
     text: "Mejora tu inglés y destaca en el trabajo con Verbify. ¡Regístrate ahora!",
     src: "https://i.ibb.co/xJNRCJF/slideimg2.png",
+    contentbutton: "Quiero mi membresía",
   },
   {
     id: 2,
     text: "¡Únete a nuestra membresía y lleva tus habilidades al siguiente nivel!",
     src: "https://i.ibb.co/K5jQj3V/slideimg3.png",
+    contentbutton: "Quiero mi membresía",
   },
 ];
 
@@ -105,6 +110,11 @@ function Homesinmembresia() {
     <div className={styles.container__main}>
       <div className={styles.container__sideBar}>
         <SideBar />
+        <ModalStartNow />
+      </div>
+      <div className={styles.container__sideBarmobile}>
+        <SideBarMobile />
+        <ModalStartNow />
       </div>
       <header>
         <div>
@@ -122,6 +132,7 @@ function Homesinmembresia() {
         <SliderHSMembresia
           text={SliderPhrases[sliderIndex].text}
           src={SliderPhrases[sliderIndex].src}
+          contentbutton={SliderPhrases[sliderIndex].contentbutton}
           handlePrevious={() =>
             setSliderIndex(
               (sliderIndex - 1 + SliderPhrases.length) % SliderPhrases.length
@@ -147,7 +158,7 @@ function Homesinmembresia() {
           <h3>Recursos para aprender mejor</h3>
           <div className={styles.slider_resources}>
             {SliderResources.map((newsItem) => (
-              <div className={styles.slider_resourcescontents}>
+              <div>
                 <CardResources
                   key={newsItem.id}
                   title={newsItem.title}
